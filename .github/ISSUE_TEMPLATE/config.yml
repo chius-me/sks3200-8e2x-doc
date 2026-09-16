@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 厂商支持
+    url: https://www.xikestor.com/
+    about: 保修、官方固件和官方手册请走厂商渠道。本仓库不是官方支持。

@@ -1,0 +1,105 @@
+site_name: SKS3200-8E2X 配置文档
+site_description: 兮克 / XikeStor SKS3200-8E2X 社区配置文档（固件 2.0.0.1 / 硬件 A0）
+site_url: https://chius-me.github.io/sks3200-8e2x-doc/
+repo_url: https://github.com/chius-me/sks3200-8e2x-doc
+repo_name: chius-me/sks3200-8e2x-doc
+edit_uri: edit/main/docs/
+
+copyright: >
+  社区文档，采用 CC BY-SA 4.0 许可。与兮克 / XikeStor 无关。
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: 跟随系统
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: 浅色
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: 深色
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+    - content.tabs.link
+    - content.code.copy
+    - toc.follow
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/chius-me/sks3200-8e2x-doc
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - 首页: index.md
+  - 入门:
+      - 硬件概览: hardware.md
+      - 第一次登录: getting-started.md
+      - 文档怎么读: methodology.md
+  - Web 界面:
+      - 总览与约定: webui/index.md
+      - 系统功能: webui/system.md
+      - 高级设置: webui/switching.md
+      - 状态信息: webui/status.md
+      - 系统工具: webui/tools.md
+  - 配置指南:
+      - VLAN: guides/vlan.md
+      - 链路聚合: guides/lag.md
+      - 环路与 STP: guides/loop-protection.md
+      - 备份与升级: guides/backup-and-upgrade.md
+  - 参考:
+      - 菜单与页面路径: reference/menu-map.md
+      - 固件分代: reference/firmware-families.md
+      - 尚未确认: reference/known-unknowns.md
+      - 字段索引: reference/field-index.md

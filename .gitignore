@@ -1,0 +1,13 @@
+site/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+*.log
+.cache/
+.mypy_cache/
+.pytest_cache/
+.idea/
+.vscode/
+*.swp
