@@ -1,59 +1,62 @@
-# 如何贡献
+<p align="right">
+  English | <a href="./CONTRIBUTING.zh.md">简体中文</a>
+</p>
 
-本仓库记录 **SKS3200-8E2X** 的实际 Web 界面和（在有证据时）实际转发行为。
-优先要可核对的观察，不要把通用交换机经验直接写成这台机器的事实。
+# Contributing
 
-## 先确认固件
+This repository records the **SKS3200-8E2X** Web UI as it actually appears, and forwarding behaviour only when there is evidence. Prefer observations that can be checked. Do not write generic switch lore as if it were this device.
 
-在「系统功能 → 系统信息」里记下：
+## Confirm firmware first
 
-- 设备描述
-- 固件版本
-- 硬件版本
-- Web 语言
+From **System → System Information**, note:
 
-2.0.0.1 / A0 是当前正文的基准。更早固件使用另一套 VLAN 模型（Bridge ID），请标成不同分代，不要把步骤混进 2.0.0.1 的指南里。
+- Device description
+- Firmware version
+- Hardware version
+- Web UI language
 
-## 欢迎的贡献
+2.0.0.1 / A0 is the baseline for the current pages. Older firmware uses a different VLAN model (Bridge ID). Mark that as a different family; do not fold those steps into the 2.0.0.1 guides.
 
-- 与现有页面不一致的字段、选项、缺页
-- 点击「应用 / 确认 / 保存」之后、以及重启之后的行为
-- 抓包或对端设备证实的 VLAN / 聚合 / STP / 镜像行为
-- 其他语言界面的用词对照
-- 脱敏后的配置导出格式说明
-- 文档笔误、死链、结构问题
+## Welcome
 
-## 不收这些
+- Fields, options, or missing pages that disagree with the current text
+- What happens after Apply / OK / Save, and after a reboot
+- VLAN / LAG / STP / mirroring behaviour confirmed with captures or a peer device
+- UI wording in other languages
+- Redacted notes on exported config format
+- Typos, dead links, structure
 
-- 未打码的配置文件、固件完整镜像、密码、完整 MAC 表
-- 把厂商宣传页或其它型号的功能写成「本机已有」
-- 未说明证据等级的「应该是这样」
-- 利用漏洞、绕过登录或攻击设备的内容
+## Not accepted
 
-## 证据怎么写
+- Unredacted config files, full firmware images, passwords, full MAC tables
+- Copying vendor marketing or another SKU’s features as “present on this unit”
+- “It should work like this” without an evidence level
+- Exploits, login bypasses, or attacks against the device
 
-沿用文档里的四个等级：
+## Evidence levels
 
-| 等级 | 含义 | 可以怎么写 |
+Use the same four levels as the docs:
+
+| Level | Meaning | Example |
 |---|---|---|
-| 已见 UI | 页面上能看到 | 「标签 VLAN 添加表单有端口三选一」 |
-| 已读当前值 | 读到了当时显示 | 「当时 PVID 全部为 1」；不等于出厂默认 |
-| 已提交 | 点了应用 / 确认 / 保存 | 写清点了哪个按钮、页面是否立刻变化 |
-| 已验证转发 | 抓包、对端或业务流量证实 | 写清拓扑、VID、Tagged/Untagged、结果 |
+| Seen in UI | The control is on the page | “Tagged VLAN add form has untagged / tagged / non-member” |
+| Value at inspection | What the screen showed then | “PVID was 1 on every port”; not a factory default |
+| Submitted | Clicked Apply / OK / Save | Which button, and whether the page changed |
+| Forwarding verified | Capture, peer, or live traffic | Topology, VID, tagged/untagged, result |
 
-不确定就写进 [尚未确认](docs/reference/known-unknowns.md)，不要升格成步骤。
+If it is unclear, add it to [Unverified items](docs/en/reference/known-unknowns.md). Do not promote it to a how-to step.
 
-## 提交方式
+## How to send it
 
-1. 先开 [Issue](.github/ISSUE_TEMPLATE/observation.yml)，尤其是和现有正文冲突的观察。
-2. 文档修改用 Pull Request，改 `docs/` 下的 Markdown。
-3. 原始核对记录可放进 `sources/`，必须去掉密码、完整 MAC、公网 IP 和个人账号。
+1. Open an [Issue](.github/ISSUE_TEMPLATE/observation.yml) first when it conflicts with the current text.
+2. Documentation changes go in a pull request against `docs/en/` and/or `docs/zh/`. Keep the two languages in sync when you change meaning.
+3. Raw inventories can go in `sources/`. Strip passwords, full MACs, public IPs, and personal accounts.
 
-本地预览：
+Preview:
 
 ```bash
 pip install -r requirements.txt
 mkdocs serve
 ```
 
-改完后至少确认 `mkdocs build --strict` 能通过。
+Before you finish, `mkdocs build --strict` should pass.

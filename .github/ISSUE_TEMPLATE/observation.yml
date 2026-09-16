@@ -1,11 +1,12 @@
-name: 页面观察
-description: 报告与本文档不一致、或可补充的 WEBUI / 转发行为
-title: "[观察] "
+name: Observation / 页面观察
+description: Report a Web UI or forwarding behaviour that disagrees with the docs, or adds to them. 报告与本文档不一致、或可补充的 WEBUI / 转发行为
+title: "[observation] "
 labels: ["observation"]
 body:
   - type: markdown
     attributes:
       value: |
+        Include firmware and hardware versions. Do not upload unredacted config files (they may contain passwords).
         请尽量附带固件版本和硬件版本。不要上传未脱敏的配置文件（可能含密码）。
   - type: input
     id: firmware

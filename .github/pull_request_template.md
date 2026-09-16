@@ -1,17 +1,18 @@
-## 改了什么
+## What changed / 改了什么
 
-- 固件 / 硬件（若涉及设备观察）：
-- 页面或指南：
+- Firmware / hardware（若涉及设备观察）:
+- Page or guide:
 
-## 证据
+## Evidence / 证据
 
-- [ ] 只核对了 UI
-- [ ] 点击了应用 / 确认 / 保存
-- [ ] 重启后仍在
-- [ ] 用抓包或对端验证了转发
+- [ ] UI only / 只核对了 UI
+- [ ] Clicked Apply / OK / Save / 点击了应用、确认或保存
+- [ ] Still present after reboot / 重启后仍在
+- [ ] Forwarding checked with a capture or peer / 用抓包或对端验证了转发
 
-## 检查
+## Checks / 检查
 
-- [ ] 没有提交密码、完整 MAC 表或未脱敏配置
-- [ ] 没有把未验证行为写成确定步骤
-- [ ] `mkdocs build --strict` 可以通过（若你本地有 Python 环境）
+- [ ] No passwords, full MAC tables, or unredacted configs
+- [ ] Unverified behaviour is not written as a how-to step
+- [ ] English (`docs/en/`) and Chinese (`docs/zh/`) stay in sync when meaning changes
+- [ ] `mkdocs build --strict` passes (if you have a local Python env)

@@ -1,5 +1,7 @@
 # sources
 
+English: redacted original inventories that the published docs were built from. The files themselves are in Chinese.
+
 这里放脱敏后的原始核对记录，方便后人判断正文是怎么来的。
 
 | 文件 | 内容 |
@@ -8,4 +10,4 @@
 
 记录里已经去掉 MAC、登录名和可定位的管理地址。当时的链路速率、错误包计数等仍是那一台机器的快照，不是出厂默认。
 
-新的观察请优先改 `docs/`，必要时再追加一份带日期的 inventory，不要覆盖旧文件。
+新的观察请优先改 `docs/zh/` 与 `docs/en/`，必要时再追加一份带日期的 inventory，不要覆盖旧文件。

@@ -1,35 +1,34 @@
-site_name: SKS3200-8E2X 配置文档
-site_description: 兮克 / XikeStor SKS3200-8E2X 社区配置文档（固件 2.0.0.1 / 硬件 A0）
+site_name: SKS3200-8E2X Docs
+site_description: Community configuration docs for the XikeStor SKS3200-8E2X (firmware 2.0.0.1 / hardware A0)
 site_url: https://chius-me.github.io/sks3200-8e2x-doc/
 repo_url: https://github.com/chius-me/sks3200-8e2x-doc
 repo_name: chius-me/sks3200-8e2x-doc
 edit_uri: edit/main/docs/
 
-copyright: >
-  社区文档，采用 CC BY-SA 4.0 许可。与兮克 / XikeStor 无关。
+copyright: Community docs, CC BY-SA 4.0. Not affiliated with XikeStor / 兮克.
 
 theme:
   name: material
-  language: zh
+  language: en
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
-        name: 跟随系统
+        name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: teal
       accent: teal
       toggle:
         icon: material/brightness-7
-        name: 浅色
+        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: teal
       accent: teal
       toggle:
         icon: material/brightness-4
-        name: 深色
+        name: Switch to system preference
   features:
     - navigation.tabs
     - navigation.sections
@@ -43,10 +42,47 @@ theme:
     - toc.follow
 
 plugins:
-  - search:
-      lang:
-        - zh
-        - en
+  - search
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+          site_name: SKS3200-8E2X Docs
+        - locale: zh
+          name: 简体中文
+          build: true
+          site_name: SKS3200-8E2X 配置文档
+          copyright: 社区文档，采用 CC BY-SA 4.0 许可。与兮克 / XikeStor 无关。
+          site_description: 兮克 / XikeStor SKS3200-8E2X 社区配置文档（固件 2.0.0.1 / 硬件 A0）
+          theme:
+            language: zh
+          nav_translations:
+            Home: 首页
+            Getting started: 入门
+            Hardware: 硬件概览
+            First login: 第一次登录
+            How to read this: 文档怎么读
+            Web UI: Web 界面
+            Overview: 总览与约定
+            System: 系统功能
+            Switching: 高级设置
+            Status: 状态信息
+            Tools: 系统工具
+            Guides: 配置指南
+            VLAN: VLAN
+            Link aggregation: 链路聚合
+            Loop protection and STP: 环路与 STP
+            Backup and firmware: 备份与升级
+            Reference: 参考
+            Menu map: 菜单与页面路径
+            Firmware families: 固件分代
+            Unverified items: 尚未确认
+            Field index: 字段索引
 
 extra:
   social:
@@ -82,24 +118,24 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
-  - 首页: index.md
-  - 入门:
-      - 硬件概览: hardware.md
-      - 第一次登录: getting-started.md
-      - 文档怎么读: methodology.md
-  - Web 界面:
-      - 总览与约定: webui/index.md
-      - 系统功能: webui/system.md
-      - 高级设置: webui/switching.md
-      - 状态信息: webui/status.md
-      - 系统工具: webui/tools.md
-  - 配置指南:
+  - Home: index.md
+  - Getting started:
+      - Hardware: hardware.md
+      - First login: getting-started.md
+      - How to read this: methodology.md
+  - Web UI:
+      - Overview: webui/index.md
+      - System: webui/system.md
+      - Switching: webui/switching.md
+      - Status: webui/status.md
+      - Tools: webui/tools.md
+  - Guides:
       - VLAN: guides/vlan.md
-      - 链路聚合: guides/lag.md
-      - 环路与 STP: guides/loop-protection.md
-      - 备份与升级: guides/backup-and-upgrade.md
-  - 参考:
-      - 菜单与页面路径: reference/menu-map.md
-      - 固件分代: reference/firmware-families.md
-      - 尚未确认: reference/known-unknowns.md
-      - 字段索引: reference/field-index.md
+      - Link aggregation: guides/lag.md
+      - Loop protection and STP: guides/loop-protection.md
+      - Backup and firmware: guides/backup-and-upgrade.md
+  - Reference:
+      - Menu map: reference/menu-map.md
+      - Firmware families: reference/firmware-families.md
+      - Unverified items: reference/known-unknowns.md
+      - Field index: reference/field-index.md

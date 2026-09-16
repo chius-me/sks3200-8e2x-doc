@@ -1,34 +1,36 @@
-# 安全说明
+<p align="right">
+  English | <a href="./SECURITY.zh.md">简体中文</a>
+</p>
 
-## 这不是漏洞赏金仓库
+# Security
 
-本项目只记录 Web 管理界面上的配置项。不要在 Issue 里贴可利用的攻击细节。
-如果你认为固件有安全问题，请走厂商渠道。
+## This is not a bug-bounty repo
 
-## 使用这台交换机时
+This project only documents Web UI configuration items. Do not post exploitable attack details in Issues. If you think the firmware has a security problem, contact the vendor.
 
-出厂管理账号在公开资料里是 `admin` / `admin`，地址是 `192.168.10.12`。
-第一次登录后应当：
+## Using the switch
 
-1. 修改登录用户名和密码
-2. 把管理地址改到你实际使用的网段
-3. 确认管理界面不能从不可信网络直接访问
+Public sources give the factory login as `admin` / `admin` at `192.168.10.12`. After first login you should:
 
-当前 2.0.0.1 中文 WEBUI **没有**看到：
+1. Change the username and password
+2. Move the management address onto the subnet you actually use
+3. Keep the Web UI off untrusted networks
 
-- 多用户 / 角色
-- HTTPS 开关
-- 管理 VLAN 选择
-- ACL、802.1X、SNMP
+The 2.0.0.1 Chinese Web UI **did not show**:
 
-因此不能把这台机器当成已经具备企业级管理面隔离的设备来写。
+- Multiple users / roles
+- An HTTPS toggle
+- A management VLAN selector
+- ACL, 802.1X, or SNMP
 
-## 向本仓库投稿时
+Do not describe this unit as if it already had enterprise-grade management-plane isolation.
 
-不要提交：
+## When contributing here
 
-- 密码、完整配置文件、未打码的备份
-- 设备完整 MAC、公网 IP、可识别的终端 MAC 表
-- 固件二进制（体积和版权都不适合放在文档仓库）
+Do not submit:
 
-配置导出的格式说明可以写，示例必须脱敏。
+- Passwords, full config files, or unredacted backups
+- Full device MACs, public IPs, or identifiable station MAC tables
+- Firmware binaries (size and copyright do not belong in a docs repo)
+
+You may describe export format. Examples must be redacted.

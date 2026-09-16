@@ -64,4 +64,4 @@
 
 1. 先备份（系统工具 → 配置 → 下载配置）。导出是否含密码未验证。
 2. 写明拓扑，避免只改一半 VLAN 导致管理口失联。
-3. 把结果按 [CONTRIBUTING](https://github.com/chius-me/sks3200-8e2x-doc/blob/main/CONTRIBUTING.md) 的格式开 Issue 或 PR。
+3. 把结果按 [CONTRIBUTING](https://github.com/chius-me/sks3200-8e2x-doc/blob/main/CONTRIBUTING.zh.md) 的格式开 Issue 或 PR。

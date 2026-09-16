@@ -1,7 +1,15 @@
+<p align="right">
+  English | <a href="./CHANGELOG.zh.md">简体中文</a>
+</p>
+
 # Changelog
+
+## 0.2.0 — 2026-09-16
+
+- Split the project into English and Chinese editions (`README.md` / `README.zh.md`, `docs/en/` / `docs/zh/`).
 
 ## 0.1.0 — 2026-09-16
 
-- 以固件 2.0.0.1、硬件 A0 的中文 WEBUI 逐页核对为基准，建立社区文档仓库。
-- 覆盖 4 个主菜单、17 个页面的字段说明，以及 VLAN / 链路聚合 / 环路与 STP / 备份升级指南。
-- 原始核对记录脱敏后放在 `sources/`。
+- Initial community docs from a live inventory of firmware 2.0.0.1 / hardware A0.
+- Field notes for 4 menus and 17 pages, plus VLAN / LAG / STP / backup guides.
+- Redacted original inventory in `sources/`.
