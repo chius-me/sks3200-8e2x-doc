@@ -22,10 +22,10 @@ Find the page from the configuration item. All of this is **seen in UI** on the 
 | 流量控制 | Advanced → Port settings | Off, On |
 | 镜像目的端口 | Advanced → Port mirroring | Discard, ports 1–10 |
 | 镜像入口 / 出口 | Advanced → Port mirroring | Disable, Enable |
-| 端口类型 (mode) | Advanced → Link aggregation | Static, LAG, LACP |
-| 端口类型 (number) | Advanced → Link aggregation | 1–65535; disabled in Static. Meaning unconfirmed |
-| LACP超时时间 | Advanced → Link aggregation | Short, Long; disabled in Static |
-| 聚合组 | Advanced → Link aggregation | 0–15; disabled in Static |
+| 端口类型 / Port Type | Advanced → Link aggregation | Static (no aggregation by default), LAG (static), LACP (dynamic) — vendor V2.0 |
+| 端口类型 (number) / Priority | Advanced → Link aggregation | 1–65535; disabled in Static. V2.0: port priority |
+| LACP超时时间 / LACP Timeout | Advanced → Link aggregation | Short / Long; V2.0: 3 s / 90 s; disabled in Static |
+| 聚合组 / Aggregation Group | Advanced → Link aggregation | 0–15; V2.0: up to 16 groups; disabled in Static |
 | LACP系统优先级 | Advanced → Link aggregation | Number; 32768 at inspection |
 | PVID | Advanced → Port VLAN | All 1 at inspection; bounds not submitted |
 | 接受的帧类型 | Advanced → Port VLAN | All, tagged only, untagged only |
@@ -40,7 +40,7 @@ Find the page from the configuration item. All of this is **seen in UI** on the 
 | 风暴速率 | Advanced → Storm control | 1–1000 Mbps; table showed 0 |
 | 静态 MAC | Status → Static MAC | MAC, port, VLAN ID 1–4094 |
 | 动态 MAC 查询 | Status → Dynamic MAC | MAC, VLAN ID |
-| 老化计时器 | Status → Dynamic MAC | Read-only; unit unlabelled |
+| 老化计时器 / Aging Timer | Status → Dynamic MAC | Read-only remaining lifetime; V2.0 default 300 seconds |
 | 下载 / 上传配置 | Tools → Configuration | File; format unverified |
 | 下载 / 上传固件 | Tools → Firmware | File; format unverified |
 

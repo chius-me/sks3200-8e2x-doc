@@ -10,4 +10,6 @@ English: redacted original inventories that the published docs were built from. 
 
 记录里已经去掉 MAC、登录名和可定位的管理地址。当时的链路速率、错误包计数等仍是那一台机器的快照，不是出厂默认。
 
+厂商 *XikeStor Ethernet Switch WEB User Manual* V2.0 只作为引用，PDF 不收入本仓库。
+
 新的观察请优先改 `docs/zh/` 与 `docs/en/`，必要时再追加一份带日期的 inventory，不要覆盖旧文件。

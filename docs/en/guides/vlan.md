@@ -27,11 +27,13 @@ flowchart LR
 
 Untagged is **egress** tag handling. PVID is **ingress** classification for untagged frames. They are not substitutes.
 
-This walkthrough did not check whether setting a port as untagged in a VLAN also rewrites PVID. After you configure, re-read both pages.
+Vendor manual V2.0: a VLAN name is an administrative label only; tagged ports keep the tag (similar to an 802.1Q trunk); untagged ports strip it (similar to an access port); ports assigned a PVID on the Port VLAN page **normally appear as untagged members** of that VLAN.
+
+This walkthrough did not submit either direction of that auto-link (PVID → untagged member, or untagged member → PVID). After you configure, re-read both pages.
 
 ## Mapping to Access / Trunk
 
-Those words are not on the UI. The table only approximates common intent with the two pages. Isolation still depends on membership in other VLANs. There is no separate ingress-filtering switch, so “untagged only” or a PVID change alone is not a claim of strict isolation. There is also no inter-VLAN routing.
+Those words are not on the UI. The table approximates common intent; V2.0 uses the same trunk/access analogy. Isolation still depends on membership in other VLANs. There is no separate ingress-filtering switch, so “untagged only” or a PVID change alone is not a claim of strict isolation. There is also no inter-VLAN routing.
 
 | Port role | Tagged VLAN | PVID | Admit type |
 |---|---|---|---|

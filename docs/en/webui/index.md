@@ -35,15 +35,15 @@ Paths are in the [menu map](../reference/menu-map.md).
 | Button (UI) | Where | What the page suggests | Verification bound |
 |---|---|---|---|
 | Refresh (刷新) | Most config and status pages | Reload page data | Whether it drops unsubmitted edits is unverified |
-| Apply (应用) | IPv4, loop/STP, ports, mirror, LAG, port VLAN, storm control, … | Likely submits that page | Not clicked |
+| Apply (应用) | IPv4, loop/STP, ports, mirror, LAG, port VLAN, storm control, … | Vendor manual V2.0: apply the new settings | Not clicked here |
 | OK (确认) | VLAN, IGMP, static MAC dialogs | Likely submits the dialog | Not clicked |
-| Save (保存) | Most pages, including some status pages | Possibly global persist | Startup-config, scope, and reboot survival unverified |
+| Save (保存) | Most pages, including Port Statistics | Vendor manual V2.0: save the current configuration | Whether that is startup-config across power loss is unverified |
 | Add / Edit | VLAN, static MAC | Opens a form | Opened and closed, never confirmed |
 | Delete / Clear | VLAN, MAC, statistics | May change config, FDB, or counters | Not clicked |
 
-!!! note "Do not infer scope from button placement"
-    Save also appears on status pages, so it is not obviously “this page only”.
-    “Apply now, Save across reboot” is common NMS language and shows up in vendor videos. It is **not** a reboot-tested fact on this firmware.
+!!! note "Vendor wording vs this walkthrough"
+    V2.0 lists Save even on Port Statistics as “save the current configuration”, so it is not “this page only”.
+    The manual does not say that unsaved Apply survives reboot. This repo still has not power-cycled to check.
 
 ## Snapshot at inspection
 
@@ -60,6 +60,6 @@ That day (value at inspection, not factory defaults):
 
 ## Outside the visible menus
 
-The 17 pages did not show standalone ACL, QoS queues, 802.1X, SNMP, a log server, NTP/SNTP, IPv6 management, a DHCP server, L3 routing, PoE, a management VLAN selector, or jumbo-frame settings.
+The 17 pages did not show standalone ACL, QoS queues, 802.1X, SNMP, a log server, NTP/SNTP, an IPv6 **configuration** page, a DHCP server, L3 routing, PoE, a management VLAN selector, or jumbo-frame settings. Vendor manual V2.0 says System Information can **display** an IPv6 address; that field was not recorded in the Chinese walkthrough table.
 
 The full list is in [unverified items](../reference/known-unknowns.md).

@@ -45,4 +45,6 @@ The visible Web UI for this account and firmware did not show:
 
 ACL, QoS queues, 802.1X, SNMP, syslog, NTP/SNTP, IPv6 management, a DHCP server, L3 routing, PoE, a management VLAN selector, jumbo frames, CLI, SSH, or an HTTPS toggle.
 
+Vendor manual V2.0 says System Information can display an IPv6 address; that is a read-out, not a separate IPv6 settings page in this walkthrough.
+
 Some of those appear in vendor marketing or other SKUs / older firmware. Do not copy a marketing feature list onto 2.0.0.1.

@@ -20,7 +20,7 @@ At the read:
 
 There is no counter start time, so you cannot date the errors or their rate. Compare reads spaced in time. Counters were not cleared here.
 
-Clear may reset counters; it was not clicked, and it is unknown whether it affects other pages.
+Vendor manual V2.0: **Clear** resets the displayed statistics to zero; **Save** on this page is still “save the current configuration”. Clear was not clicked here.
 
 ## Static MAC
 
@@ -48,7 +48,7 @@ Buttons: Refresh, Next page, Clear, Save. Filters: MAC address, VLAN ID, plus Se
 
 Columns: index, MAC, port, VLAN ID, ageing timer.
 
-Visible entries were all VLAN 1. Ageing showed values such as 300, 281, 150. No unit is labelled, and there is no editable global ageing field. Do not treat 300 as a confirmed global setting.
+Visible entries were all VLAN 1. Ageing showed values such as 300, 281, 150. Vendor manual V2.0: this is remaining lifetime in **seconds**, refreshed by matching traffic; **default 300 seconds**. The page still has no editable global ageing field.
 
 One row is the switch’s own MAC on port **0**. That may be an internal management / CPU port. The page does not say so; it is not a faceplate port 0.
 

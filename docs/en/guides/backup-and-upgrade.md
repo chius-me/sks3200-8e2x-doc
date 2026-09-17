@@ -6,7 +6,7 @@ Related pages:
 - [Tools → Firmware](../webui/tools.md#firmware)
 - [System → Reboot & restore](../webui/system.md#reboot-and-restore)
 
-This walkthrough did not download config, download firmware, upload, reboot, or click Restore. The notes below are only the visible entry points and what must not be treated as fact.
+This walkthrough did not download config, download firmware, upload, reboot, or click Restore. Button meanings below mix the visible UI with [vendor manual V2.0](../reference/vendor-manual.md).
 
 ## Backup
 
@@ -25,7 +25,7 @@ Treat the file as if it contains credentials: keep it local, do not commit it to
 
 The same page has Choose file and Upload config. Whether import requires a reboot, checks the model, or can brick the unit is unknown.
 
-The RST pinhole and the page’s Restore button are not the same verified operation. Restore’s scope is unknown; RST hold time was not measured here.
+The RST pinhole and the page’s Restore (恢复) button are not the same measured operation. Vendor manual V2.0: **Restore** on Restart and Restore returns **factory defaults** and removes the saved configuration — back up first. RST hold time was not measured here.
 
 ## Firmware
 
@@ -38,7 +38,7 @@ On upload:
 - Use a file that matches **SKS3200-8E2X** and your hardware revision
 - Do not flash 5E2X, 8E2X-P, or other series packages unless you have an independent, repeatable success and accept a brick
 - Keep power applied during the upgrade
-- Whether VLANs / management IP survive is unverified — still download config first
+- Vendor manual V2.0: after a successful program the switch **restarts automatically**. Whether VLANs survive is still unverified here — download config first
 
 Vendor firmware comes from the vendor. This repo does not host binaries.
 

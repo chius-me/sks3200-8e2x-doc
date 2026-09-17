@@ -26,8 +26,7 @@ The Web UI numbers ports **1–10**. Combined with link state at inspection and 
 | 1–8 | 2.5G RJ45 | Ports 1 and 2 were 1G full duplex, 3 was 100M full duplex, 8 was 2.5G full duplex; other copper ports were down |
 | 9–10 | 10G SFP+ | Port 10 was 10G full duplex, 9 was down |
 
-The port-settings speed list includes 10M / 100M / 1G / 2.5G / 10G.
-That is the **full set of UI options**, not a promise that every physical port supports every speed. This walkthrough did not change the form port-by-port to test limits.
+The Chinese port-settings dropdown listed 10M / 100M / 1G / 2.5G / 10G together. Vendor manual V2.0 splits them: copper 10/100/1000/2500 Mbps as listed; SFP/SFP+ 1000/2500/10G full, subject to model and module. This walkthrough did not submit the form port-by-port.
 
 ## Public specifications (not measured here)
 
@@ -42,7 +41,7 @@ The figures below come from vendor pages, packaging, and teardowns. They are **n
 | Consumption | ≤ 12 W | Passive-cooled metal case |
 | Size | about 207 × 136 × 35 mm | Packaging copy varies slightly |
 | VLAN | 802.1Q; some copy says at most 32 VLAN IDs | This firmware’s tagged-VLAN form labels IDs 2–4094; the cap was not submitted |
-| Aggregation | Static / LACP; some reviews say 16 groups | The page offers groups 0–15 |
+| Aggregation | Static / LACP; V2.0: up to 16 groups | The page offers groups 0–15 |
 | Factory management IP | 192.168.10.12/24 | See [First login](getting-started.md) |
 | Factory login | admin / admin | Change it |
 

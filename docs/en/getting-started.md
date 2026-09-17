@@ -3,7 +3,7 @@
 ## Factory management entry
 
 The two values below were **not** read on this 2.0.0.1 walkthrough (the unit’s address and account had already been changed).
-They come from the vendor SKS32 notes and several independent reviews, which agree, so they are written as factory values:
+[Vendor manual V2.0](reference/vendor-manual.md) and several independent reviews agree, so they are written as factory values:
 
 | Item | Value |
 |---|---|
@@ -11,14 +11,14 @@ They come from the vendor SKS32 notes and several independent reviews, which agr
 | Username | `admin` |
 | Password | `admin` |
 
-Browser requirements vary by document. The vendor manual mentions IE9+ / Chrome 23+ / Firefox 20+; use a current Chrome, Firefox, or Safari. This walkthrough used HTTP. Forced HTTPS was not seen.
+The V2.0 manual tells you to change the default password after first login. This walkthrough used HTTP. Forced HTTPS was not seen.
 
 ## How to connect a PC
 
-1. Ethernet from the PC to any RJ45 port (the console port is not how you reach the Web UI).
-2. Set the PC IPv4 address in `192.168.10.0/24` except `.12`, for example `192.168.10.10/24`. Gateway can stay empty.
+1. Ethernet from the PC to any RJ45 port (the console port is not how you reach the Web UI). Vendor manual V2.0: the PC must be physically on an Ethernet port of the switch.
+2. Set the PC IPv4 address to `192.168.10.x` with `x` from **2 to 254**, mask `255.255.255.0`. Do **not** use `192.168.10.12`. Example: `192.168.10.10/24`. Gateway can stay empty.
 3. Open `http://192.168.10.12`.
-4. Languages: Simplified Chinese, English, Русский язык, 日本語, 한국어. Field names in this repo follow Simplified Chinese.
+4. Languages: Simplified Chinese, English, Русский язык, 日本語, 한국어. Field names in this repo follow the Simplified Chinese UI; English names below follow vendor manual V2.0.
 
 If your LAN is already `192.168.10.0/24` and `.12` is taken, do not plug the switch into the live network first. Use a single cable to the PC, change the management address, then join the LAN.
 
@@ -49,9 +49,9 @@ After you change the IP, the browser must use the new address. Put the PC on the
 
 ### 3. Click Save (保存)
 
-Most pages have both Apply (应用) and Save (保存). Vendor videos and some reviews treat Apply as immediate and Save as “still there after reboot”.
+Most pages have both Apply (应用) and Save (保存). Vendor manual V2.0 defines **Apply** as applying the new settings and **Save** as saving the current configuration. It does not spell out reboot or power-loss behaviour.
 
-This walkthrough **did not** reboot to check that. Conservative approach: Apply, then Save once on the same or another page, then reboot in a maintenance window of your own.
+This walkthrough **did not** reboot to check persistence. Conservative approach: Apply, then Save once, then reboot in a maintenance window of your own.
 See [common buttons](webui/index.md#common-buttons).
 
 ## If you cannot open the page

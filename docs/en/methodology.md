@@ -7,8 +7,9 @@ These pages are deliberately conservative. What you can tick on a switch page, a
 | Source | Used for | Not used for |
 |---|---|---|
 | 2026-09-16 walkthrough of a 2.0.0.1 / A0 unit, Simplified Chinese Web UI | Menus, fields, options, values at inspection, page paths | Factory defaults, or forwarding behaviour |
-| Vendor manuals, product pages, official “change the IP” notes | Factory address, account, some specs | Menus not seen in this walkthrough |
-| Community reviews and forums | Older firmware differences, teardown chip, LAG group count as side evidence | Direct 2.0.0.1 how-to steps |
+| [Vendor manual V2.0](reference/vendor-manual.md) (WEB User Manual for 5E2X / 8E2X and PoE variants) | Factory login, Apply/Save wording, LAG/VLAN/IGMP/MAC ageing, firmware restart | Packet forwarding, reboot tests, fields the Chinese walkthrough did not show |
+| Other vendor pages and “change the IP” notes | Extra SKS32 remarks (e.g. management reachability) | Anything that contradicts the device UI |
+| Community reviews and forums | Older firmware (Bridge ID), teardown chip | Direct 2.0.0.1 how-to steps when the V2.0 manual already defines the field |
 
 Every visible menu was opened, including VLAN / static MAC edit dialogs. All of them were **cancelled or closed**. Nothing was confirmed.
 
@@ -41,14 +42,14 @@ There is also **vendor / community**: public sources, labelled as such.
 | Button | Seen in UI | How this repo writes it |
 |---|---|---|
 | Refresh (刷新) | Most config and status pages | Reload the page; whether it discards unsubmitted edits is unverified |
-| Apply (应用) | IPv4, loop/STP, ports, mirror, LAG, port VLAN, storm control, … | Likely submits that page; not clicked |
+| Apply (应用) | IPv4, loop/STP, ports, mirror, LAG, port VLAN, storm control, … | V2.0: apply the new settings; not clicked here |
 | OK (确认) | VLAN, IGMP, static MAC dialogs | Likely submits the dialog; not clicked |
-| Save (保存) | Most pages, including some status pages | Possibly global persist; scope and reboot survival unverified |
+| Save (保存) | Most pages, including Port Statistics | V2.0: save the current configuration; power-loss survival unverified |
 | Add / Edit | VLAN, static MAC | Forms were opened and closed |
 | Delete / Clear | VLAN, MAC, statistics | May change config, the FDB, or counters; not clicked |
 
-Do not infer Save’s scope from which page it sits on.
-Do not write “Apply takes effect now, Save survives reboot” as a fact already verified on this firmware.
+Do not infer Save’s scope from which page it sits on. V2.0 lists Save on Port Statistics as “save the current configuration”.
+Do not write “unsaved Apply survives reboot” as a fact already verified on this firmware.
 
 ## Visible is not “supported”; missing is not “absent”
 

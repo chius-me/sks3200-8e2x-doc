@@ -83,6 +83,7 @@ plugins:
             Firmware families: 固件分代
             Unverified items: 尚未确认
             Field index: 字段索引
+            Vendor manual V2.0: 厂商手册 V2.0
 
 extra:
   social:
@@ -139,3 +140,4 @@ nav:
       - Firmware families: reference/firmware-families.md
       - Unverified items: reference/known-unknowns.md
       - Field index: reference/field-index.md
+      - Vendor manual V2.0: reference/vendor-manual.md

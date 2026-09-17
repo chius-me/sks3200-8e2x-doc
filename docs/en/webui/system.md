@@ -6,9 +6,9 @@ Menus: system information, IPv4 address, users, loop & STP, reboot & restore.
 
 Path: `/setup.html?nav=1-1`
 
-Read-only display with Refresh and Save. This walkthrough read:
+Refresh and Save. Vendor manual V2.0 says you can **view or edit** the device description, and that the page also shows IPv4, **IPv6**, MAC, firmware, and other identity fields. The Chinese walkthrough table did not record an IPv6 line.
 
-| Field | Value |
+| Field | Value at inspection |
 |---|---|
 | Device description | SKS3200-8E2X |
 | MAC address | Present on the page; do not publish any one unit’s MAC |
@@ -88,6 +88,6 @@ Selecting RSTP only proves the radio state. It does not prove the implementation
 
 Path: `/reboot.html?nav=1-9`
 
-Two buttons: Reboot (重启), Restore (恢复). Neither was clicked.
+Two buttons: Restart (重启), Restore (恢复). Neither was clicked.
 
-Restore especially: the page does not describe scope, so it is not “keep management IP”, “full factory”, or anything else. Hold time for the RST pinhole was not measured here either.
+Vendor manual V2.0: **Restart** reboots the switch; **Restore** returns factory defaults and **removes the saved configuration**, and may interrupt service — back up first. The page itself still has no extra confirmation text. Whether management IP and the login return to `192.168.10.12` / `admin` follows from “factory defaults” but was not tried here. RST pinhole hold time was not measured.

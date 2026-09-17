@@ -4,6 +4,12 @@
 
 # Changelog
 
+## 0.3.0 — 2026-09-17
+
+- 对照 *XikeStor Ethernet Switch WEB User Manual* V2.0（5E2X / 8E2X 及 PoE 型号）调优。
+- 采用厂商对应用/保存、恢复出厂、聚合模式、Priority、LACP 3 秒 / 90 秒、16 组、MAC 老化 300 秒、固件自动重启、电口/光口速率的定义。
+- 仍以现场 WEBUI 核对为基准；厂商原文单独标明，不当成已经抓包验证。
+
 ## 0.2.0 — 2026-09-16
 
 - 仓库改为中英文两版（`README.md` / `README.zh.md`，`docs/en/` / `docs/zh/`）。
