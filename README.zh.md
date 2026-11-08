@@ -1,18 +1,21 @@
-<p align="right">
+<div align="right">
   <a href="./README.md">English</a> | 简体中文
-</p>
+</div>
 
-<h1 align="center">SKS3200-8E2X 配置文档</h1>
+<div align="center">
 
-<p align="center">
-  兮克 / XikeStor SKS3200-8E2X Web 管理界面的社区配置文档。
-</p>
+# SKS3200-8E2X 配置文档
 
-<p align="center">
-  <img alt="firmware" src="https://img.shields.io/badge/firmware-2.0.0.1-0f766e">
-  <img alt="hardware" src="https://img.shields.io/badge/hardware-A0-0f766e">
-  <img alt="license" src="https://img.shields.io/badge/license-CC%20BY--SA%204.0-22863a">
-</p>
+兮克 / XikeStor SKS3200-8E2X Web 管理界面的社区配置文档。
+
+[![License](https://img.shields.io/badge/license-CC%20BY--SA%204.0-22863a.svg)](LICENSE)
+[![Pages](https://github.com/chius-me/sks3200-8e2x-doc/actions/workflows/pages.yml/badge.svg)](https://github.com/chius-me/sks3200-8e2x-doc/actions)
+![Firmware](https://img.shields.io/badge/firmware-2.0.0.1-0f766e)
+![Hardware](https://img.shields.io/badge/hardware-A0-0f766e)
+
+[文档站点 (简体中文)](https://chius-me.github.io/sks3200-8e2x-doc/zh/) · [Docs Site (English)](https://chius-me.github.io/sks3200-8e2x-doc/) · [问题反馈](https://github.com/chius-me/sks3200-8e2x-doc/issues)
+
+</div>
 
 本仓库**不是**厂商官方手册，也与兮克 / XikeStor 无关。
 
@@ -82,6 +85,12 @@ sources/              脱敏后的原始核对记录（中文）
 提交观察时请写明：**固件 / 硬件 / 页面 / 是否点击了应用或保存 / 是否用抓包验证**。
 不要上传含密码的配置文件。
 
-## 许可
+## 📄 许可
 
-文档采用 [CC BY-SA 4.0](LICENSE)。产品名称仅用于标识被记录的硬件。
+文档采用 [CC BY-SA 4.0](LICENSE) 协议发布。产品名称仅用于标识被记录的硬件。
+
+---
+
+<div align="center">
+  <sub>Curated with ❤️ by <a href="https://chius.cc">Chius</a> · Powered by MkDocs & GitHub Pages</sub>
+</div>
