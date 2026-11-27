@@ -13,7 +13,7 @@ These pages are deliberately conservative. What you can tick on a switch page, a
 
 Every visible menu was opened, including VLAN / static MAC edit dialogs. All of them were **cancelled or closed**. Nothing was confirmed.
 
-Redacted original notes: [sources/2026-09-16-webui-inventory.md](https://github.com/chius-me/sks3200-8e2x-doc/blob/main/sources/2026-09-16-webui-inventory.md).
+Redacted original notes: [sources/2026-09-16-webui-inventory.md](https://github.com/chius-n/sks3200-8e2x-doc/blob/main/sources/2026-09-16-webui-inventory.md).
 
 ## Four evidence levels
 
@@ -63,4 +63,4 @@ If you verify an unverified item on a live switch:
 
 1. Back up first (Tools → Configuration → Download). Whether the export contains passwords is unverified.
 2. Write down the topology. Half-finished VLAN edits can drop the management path.
-3. File the result as in [CONTRIBUTING](https://github.com/chius-me/sks3200-8e2x-doc/blob/main/CONTRIBUTING.md).
+3. File the result as in [CONTRIBUTING](https://github.com/chius-n/sks3200-8e2x-doc/blob/main/CONTRIBUTING.md).

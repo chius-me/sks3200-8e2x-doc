@@ -9,11 +9,11 @@
 兮克 / XikeStor SKS3200-8E2X Web 管理界面的社区配置文档。
 
 [![License](https://img.shields.io/badge/license-CC%20BY--SA%204.0-22863a.svg)](LICENSE)
-[![Pages](https://github.com/chius-me/sks3200-8e2x-doc/actions/workflows/pages.yml/badge.svg)](https://github.com/chius-me/sks3200-8e2x-doc/actions)
+[![Pages](https://github.com/chius-n/sks3200-8e2x-doc/actions/workflows/pages.yml/badge.svg)](https://github.com/chius-n/sks3200-8e2x-doc/actions)
 ![Firmware](https://img.shields.io/badge/firmware-2.0.0.1-0f766e)
 ![Hardware](https://img.shields.io/badge/hardware-A0-0f766e)
 
-[文档站点 (简体中文)](https://chius-me.github.io/sks3200-8e2x-doc/zh/) · [Docs Site (English)](https://chius-me.github.io/sks3200-8e2x-doc/) · [问题反馈](https://github.com/chius-me/sks3200-8e2x-doc/issues)
+[文档站点 (简体中文)](https://chius-n.github.io/sks3200-8e2x-doc/zh/) · [Docs Site (English)](https://chius-n.github.io/sks3200-8e2x-doc/) · [问题反馈](https://github.com/chius-n/sks3200-8e2x-doc/issues)
 
 </div>
 
@@ -21,7 +21,7 @@
 
 正文依据一台硬件 A0、固件 2.0.0.1 设备的中文 WEBUI 逐页核对写成，并明确标出尚未用抓包、提交或重启验证的行为。
 
-**文档站：** [English](https://chius-me.github.io/sks3200-8e2x-doc/) · [简体中文](https://chius-me.github.io/sks3200-8e2x-doc/zh/)
+**文档站：** [English](https://chius-n.github.io/sks3200-8e2x-doc/) · [简体中文](https://chius-n.github.io/sks3200-8e2x-doc/zh/)
 
 ## 这台交换机
 
