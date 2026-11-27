@@ -70,4 +70,4 @@
 | 未验证转发 | 没有用抓包或对端流量证实 |
 | 厂商 / 社区 | 来自公开资料，不是本次逐页核对 |
 
-核对当天的脱敏原始记录在仓库 [`sources/`](https://github.com/chius-n/sks3200-8e2x-doc/tree/main/sources)。
+核对当天的脱敏原始记录在仓库 [`sources/`](https://github.com/chius-cc/sks3200-8e2x-doc/tree/main/sources)。

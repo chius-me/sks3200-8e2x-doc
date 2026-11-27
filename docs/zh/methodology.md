@@ -13,7 +13,7 @@
 
 核对过程中已打开全部可见菜单入口，也打开过 VLAN / 静态 MAC 等编辑对话框，但**全部取消或关闭**，没有确认提交。
 
-脱敏后的原始记录：[sources/2026-09-16-webui-inventory.md](https://github.com/chius-n/sks3200-8e2x-doc/blob/main/sources/2026-09-16-webui-inventory.md)。
+脱敏后的原始记录：[sources/2026-09-16-webui-inventory.md](https://github.com/chius-cc/sks3200-8e2x-doc/blob/main/sources/2026-09-16-webui-inventory.md)。
 
 ## 四个证据等级
 
@@ -65,4 +65,4 @@
 
 1. 先备份（系统工具 → 配置 → 下载配置）。导出是否含密码未验证。
 2. 写明拓扑，避免只改一半 VLAN 导致管理口失联。
-3. 把结果按 [CONTRIBUTING](https://github.com/chius-n/sks3200-8e2x-doc/blob/main/CONTRIBUTING.zh.md) 的格式开 Issue 或 PR。
+3. 把结果按 [CONTRIBUTING](https://github.com/chius-cc/sks3200-8e2x-doc/blob/main/CONTRIBUTING.zh.md) 的格式开 Issue 或 PR。

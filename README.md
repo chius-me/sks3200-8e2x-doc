@@ -9,11 +9,11 @@
 Community configuration docs for the XikeStor (兮克) SKS3200-8E2X Web UI.
 
 [![License](https://img.shields.io/badge/license-CC%20BY--SA%204.0-22863a.svg)](LICENSE)
-[![Pages](https://github.com/chius-n/sks3200-8e2x-doc/actions/workflows/pages.yml/badge.svg)](https://github.com/chius-n/sks3200-8e2x-doc/actions)
+[![Pages](https://github.com/chius-cc/sks3200-8e2x-doc/actions/workflows/pages.yml/badge.svg)](https://github.com/chius-cc/sks3200-8e2x-doc/actions)
 ![Firmware](https://img.shields.io/badge/firmware-2.0.0.1-0f766e)
 ![Hardware](https://img.shields.io/badge/hardware-A0-0f766e)
 
-[Docs Site (English)](https://chius-n.github.io/sks3200-8e2x-doc/) · [文档站点 (简体中文)](https://chius-n.github.io/sks3200-8e2x-doc/zh/) · [Issues](https://github.com/chius-n/sks3200-8e2x-doc/issues)
+[Docs Site (English)](https://chius-cc.github.io/sks3200-8e2x-doc/) · [文档站点 (简体中文)](https://chius-cc.github.io/sks3200-8e2x-doc/zh/) · [Issues](https://github.com/chius-cc/sks3200-8e2x-doc/issues)
 
 </div>
 
@@ -21,7 +21,7 @@ This is **not** an official vendor manual, and it is not affiliated with XikeSto
 
 The pages are based on a live walkthrough of firmware **2.0.0.1** on hardware **A0**, using the Simplified Chinese Web UI. Settings were read, not applied. Anything that still needs a submit, reboot, or packet capture is marked as such.
 
-**Docs site:** [English](https://chius-n.github.io/sks3200-8e2x-doc/) · [简体中文](https://chius-n.github.io/sks3200-8e2x-doc/zh/)
+**Docs site:** [English](https://chius-cc.github.io/sks3200-8e2x-doc/) · [简体中文](https://chius-cc.github.io/sks3200-8e2x-doc/zh/)
 
 ## The switch
 

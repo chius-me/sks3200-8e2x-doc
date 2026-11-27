@@ -1,8 +1,8 @@
 site_name: SKS3200-8E2X Docs
 site_description: Community configuration docs for the XikeStor SKS3200-8E2X (firmware 2.0.0.1 / hardware A0)
-site_url: https://chius-n.github.io/sks3200-8e2x-doc/
-repo_url: https://github.com/chius-n/sks3200-8e2x-doc
-repo_name: chius-n/sks3200-8e2x-doc
+site_url: https://chius-cc.github.io/sks3200-8e2x-doc/
+repo_url: https://github.com/chius-cc/sks3200-8e2x-doc
+repo_name: chius-cc/sks3200-8e2x-doc
 edit_uri: edit/main/docs/
 
 copyright: Community docs, CC BY-SA 4.0. Not affiliated with XikeStor / 兮克.
@@ -88,7 +88,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/chius-n/sks3200-8e2x-doc
+      link: https://github.com/chius-cc/sks3200-8e2x-doc
 
 markdown_extensions:
   - admonition

@@ -70,4 +70,4 @@ The same labels are used everywhere so “saw it” is not written as “tested 
 | Forwarding not verified | No capture or peer traffic |
 | Vendor / community | Public sources, not this walkthrough |
 
-The redacted inventory from that day is in [`sources/`](https://github.com/chius-n/sks3200-8e2x-doc/tree/main/sources).
+The redacted inventory from that day is in [`sources/`](https://github.com/chius-cc/sks3200-8e2x-doc/tree/main/sources).
